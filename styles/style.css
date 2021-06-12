@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     left: -17px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .container{
 	max-width: 1200px;
@@ -161,15 +161,16 @@ slider__image img{
 .about{
     position: relative;
     width: 1800px;
-    height: auto;
+    height: 815px;
+    margin-top: 100px;
     margin: 0 auto;
     padding: 0 15px;
 }
 .about__wrap{
     position: relative;
     width: 100%;
-    height: auto;
-    margin-top: 48px;
+    height: 100%;
+    margin-top: 148px;
 }
 .about__title{
     position: absolute;
@@ -274,6 +275,7 @@ h2 span{
     left: 193px;
     opacity: 0.8;
     z-index: 100;
+    opacity: 0.5;
 }
 .pics__item:nth-of-type(2){
     position: absolute;
@@ -291,7 +293,7 @@ h2 span{
     height: 391px;
     left: 613px;
     top: 168px;
-    opacity: 0.8;
+    opacity: 0.5;
     z-index: 1;
 }
 /* IMAGES - end */
@@ -302,22 +304,24 @@ h2 span{
 
 /* SERVICES - start */
 .services{
+    position: relative;
     width: 1800px;
     height: auto;
+    margin: 0 15px;
+    padding: 0 15px;
 }
 .services__wrap{
     position: relative;
     width: 1800px;
     height: 690px;
     left: -280px;
-    top: 48px;
     display: flex;
     flex-direction: column;
     background-color: #FBFBFB;
 }
 .services__wrap h2{
     margin-top: 129px;
-    margin-left: 315px;
+    margin-left: 270px;
     font-family: Oswald;
     font-weight: bold;
     font-size: 48px;
@@ -338,7 +342,7 @@ h2 span{
 .wrap__list{
     width: 1173;
     height: 260px;
-    margin: 300px auto;
+    margin: 85px auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -347,9 +351,9 @@ h2 span{
 .list__item{
     position: relative;
     width: 373px;
-    height: 295px;
+    height: 260px;
     background-color: #FFFFFF;
-    border-bottom:1px solid none;
+    border-bottom: 1px solid none;
     margin: 0 30px;
     display: flex;
     flex-direction: column;
@@ -370,69 +374,65 @@ h2 span{
     width: 35px;
     height: 2px;
     left: 0px;
-    top: 72px;
+    top: -60px;
     background-color: #252525;
     display: block;
-    position: absolute;
+    position: relative;
 }
 h3{
-    position: absolute;
-    width: 85px;
-    height: 30px;
-    left: 0px;
-    top: -3px;
     text-transform: uppercase;
-    font-family: Oswald;
-    font-style: normal;
+    font-family: 'Oswald';
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
-    display: flex;
-    align-items: flex-end;
     letter-spacing: 1.28px;
     color: #252525;
 }
-.items__text{
-    position: absolute;
-    width: 281px;
-    height: 75px;
-    left: 43px;
-    top: 116px;
-    font-family: Open Sans;
-    font-style: normal;
+.item__text{
+    position: relative;
+    font-family: 'Open Sans';
     font-weight: normal;
+    top: 30px;
     font-size: 12px;
     line-height: 25px;
-    display: flex;
-    text-align: left;
-    align-items: center;
     letter-spacing: 1px;
     color: #777777;
 }
 .item__image{
-    position: absolute;
-    width: 124px;
-    height: 103px;
-    left: 238px;
-    top: 16px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 280px;
+    top: -60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item__image img{
+    width: 50%;
+    height: 50%;
+    opacity: 0.5;
+}
+.item__image img:hover{
+    opacity: 1;
 }
 .more{
-    position: absolute;
-    width: 48px;
-    height: 15px;
-    left: 44px;
-    top: 210px;
-    font-family: Oswald;
-    font-style: normal;
+    position: relative;
+    font-family: 'Oswald';
     font-weight: 300;
     font-size: 10px;
+    top: 30px;
     line-height: 15px;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
     color: #252525;
     opacity: 0.5;
+    cursor: pointer;
+}
+.more:hover{
+    opacity: 1;
 }
 /* SERVICES - end */
 
@@ -440,13 +440,17 @@ h3{
 
 /* WORKS - start */
 .works{
+    position: relative;
     margin-top: 100px;
-	width: 100vw;
+	width: 1800px;
     height: auto;   
+    margin: 0 15px;
+    padding: 0 15px;
 }
 .works__wrap{
     position: relative;
     width: 1185px;
+    height: auto;
     margin: 0 auto;
 }
 .works__wrap h2{
@@ -501,12 +505,12 @@ h3{
     left: 584px;
     top: 0px;
 }
-.works__item:nth-of-type(3){
-    top: 0px;
+/* .works__item:nth-of-type(3){
+    top: -200px;
 }
 .works__item:nth-of-type(4){
-    top: 0px;
-}
+    top: -0px;
+} */
 .works__item:nth-child(2n){
     position: relative;
     width: 584px;
@@ -519,18 +523,23 @@ h3{
     width: 455px;
     height: 444px;
     left: 129px;
-    top: 0px;
+    top: -200px;
     opacity: 0.5;
+}
+.item__img img{
+    width: 100%;
+    height: 100%;
 }
 .works__item:nth-child(2n) .item__img{
     position: absolute;
     width: 455px;
     height: 444px;
     left: 0px;
-    top: 0px;
+    top: -200px;
     opacity: 0.5;
 }
 .item__text h3{
+    white-space: nowrap;
     margin-top: 350px;
     font-family: 'Oswald';
     font-weight: 300;
@@ -540,8 +549,9 @@ h3{
     color: #252525;
     text-transform: uppercase;
 }
-
 .works__item:nth-child(2n) .item__text h3{
+    white-space: nowrap;
+    margin-left: 370px;
     font-family: 'Oswald';
     white-space: nowrap;
     font-weight: 300;
@@ -550,10 +560,22 @@ h3{
     letter-spacing: 3.072px; 
     color: #252525;
 }
-.item__text h3:hover{
+.item__text:hover h3{
     text-decoration: line-through #4CAF50;
 }
-.item__text h4{
+.desc{
+    position: relative;
+    width: 116px;
+    height: 25px;
+    left: 350px;
+    top: 100px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.desc p:nth-of-type(1){
     font-family: 'Open Sans';
     font-weight: 300;
     font-size: 18px;
@@ -562,13 +584,20 @@ h3{
     letter-spacing: 1.152px;
     color: #252525;
 }
-.works__item:nth-child(2n) .item__text h4{
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 1.152px;
-    color: #252525;
+.works__item:nth-child(2n) .desc{
+    position: relative;
+    width: 116px;
+    height: 25px;
+    left: 150px;
+    top: 100px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.works__item:nth-child(2n) .desc p:nth-of-type(2){
+    text-align: left;
 }
 .item__text p{
     font-family: 'Open Sans';
@@ -577,16 +606,6 @@ h3{
     font-size: 13px;
     line-height: 23px;
     text-align: right;
-    letter-spacing: 0.832px;
-    color: #C2C2C2;
-}
-.works__item:nth-child(2n) .item__text p{
-    white-space: pre-wrap;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 23px;
-    text-align: left;
     letter-spacing: 0.832px;
     color: #C2C2C2;
 }
@@ -600,7 +619,7 @@ h3{
     width: 1800px;
     height: 845px;
     margin: 0 auto;
-    top: 1000px;
+    margin-top: 100px;
     left: 20px;
     background-color: #FBFBFB;
     justify-content: center;
@@ -685,18 +704,19 @@ h3{
 .team__slider .slider__item {
 	width: 370px;
     height: 398px;
-    margin: 0 28px;
+    /* margin: 0 28px; */
 }
 .team__slider .slider__item img{
 	width: 100%;
     height: 100%;
     opacity: 0.8;
+    padding: 15px;
 }
 .slider__item .text{
     position: relative;
     width: 100%;
     height: 55px;
-    bottom: 58px;
+    bottom: 70px;
     left: 0px;
     background: #FFFFFF;
     mix-blend-mode: normal;
@@ -768,10 +788,10 @@ h3{
 /* ACCORDION - start */
 .rewiew{
     position: relative;
+    margin-top: 100px;
     width: 1800px;
     height: 504px;
     margin: 0 auto;
-    top: 1100px;
     left: 20px;
 }
 .rewiew__wrap{
@@ -796,11 +816,15 @@ h3{
     height: 15px;
     margin: 20px 51px;
 }
-.title-arrow{
+.title-arrow{ 
+    position: relative;
+    display: block;
+    left: 745px;
+    top: 23px;
     width: 20px;
     height: 10px;
-    transform: rotateY(270deg);
 }
+
 .accordion-title h2{
     font-family: 'Oswald';
     font-weight: 700;
@@ -840,6 +864,9 @@ h3{
 .accordion-input:checked + .accordion-text{
     display: block;
 }
+.accordion-input:checked + .title-arrow{
+    transform: rotate(180deg);
+}
 /* ACCORDION - end */
 
 /* TEAM - end */
@@ -849,116 +876,113 @@ h3{
 
 /* CONTACT - start*/
 .contact{
+    position: relative;
+    margin-top: 100px;
     width: 100vw;
-    height: auto;
+    height: 300px;
 }
 .contact__wrap{
+    width: 100%;
+    height: 100%;
     position: relative;
-    left: 49px;
     display: flex;
     flex-direction: row;
 }
 .wrap__work{
     position: relative;
-    margin-left: -50px;
-    width: 50%;
+    margin-left: 47px;
+    width: 903px;
     height: 300px;
     background: #FBFBFB;
-    left: 0;
+    left: 15px;
 }
 .wrap__mail{
     position: relative;
-    margin-right: 50px;
-    width: 50%;
+    width: 903px;
     height: 300px;
     background: #70BD59;
-    right: 0;
+    left: 15px;
 }
-.wrap__work p{
-    position: absolute;
-    left: 320px;
-    top: 123px;
+.work__text{
+    position: relative  ;
+    margin: 70px 312px;
+    display: flex;
+    text-align: center;
+}
+.work__text h3{
+    white-space: nowrap;
     font-family: Oswald;
-    font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
-    display: flex;
-    text-align: center;
-    letter-spacing: 2.66667px;
-    color: #373737;
-}
-.wrap__work p:nth-of-type(2){
-    position: absolute;
-    top: 42px;
-    left: -10px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 19px;
-    display: flex;
-    text-align: center;
-    letter-spacing: 1.55556px;
-    color: #373737;
-    mix-blend-mode: normal;
-    opacity: 0.8;
-}
-.wrap__mail p{
-    position: absolute;
-    left: 394px;
-    top: 123px;
-    font-family: Oswald;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
     letter-spacing: 2.6px;
-    color: #FFFFFF;
+    color: #373737;
 }
-.wrap__mail p:nth-of-type(2){
-    position: r;
-    font-family: Open Sans;
-    font-style: normal;
-    left: 6px;
-    top: 42px;
-    font-weight: 300;
+.work__text p{
+    white-space: nowrap;
+    margin-top: 50px;
+    margin-left: -280px;
+    font-family: Oswald;
+    font-weight: normal;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 36px;
+    letter-spacing: 2.6px;
+    color: #373737;
+}
+.mail__text{
+    position: relative  ;
+    margin: 70px 394px;
     display: flex;
-    align-items: flex-end;
     text-align: center;
-    letter-spacing: 1.55556px;
-    color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.8;
+}
+.mail__text h3{
+    white-space: nowrap;
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 2.6px;
+    color: #373737;
+}
+.mail__text p{
+    white-space: nowrap;
+    margin-top: 50px;
+    margin-left: -110px;
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 2.6px;
+    color: #373737;
 }
 .arrow{
-    position: absolute;
+    position: relative;
     width: 9px;
     height: 9px;
-    top: 223px;
+    top: -80px;
+    left: 445px;
 }
-.contact__wrap img{
+.work__image{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    left: 434px;
+    top: 72px;
+}
+.work__image img{
     width: 100%;
     height: 100%;
 }
-.wrap__work{
+.mail__image{
     position: relative;
     width: 35px;
     height: 35px;
     left: 434px;
     top: 72px;
 }
-.wrap__mail{
-    position: relative;
-    width: 35px;
-    height: 35px;
-    left: 434px;
-    top: 72px;
+.mail__image img{
+    width: 100%;
+    height: 100%;
 }
 /* CONTACT - end*/
 
@@ -969,7 +993,6 @@ footer{
     position: relative;
     width: 100vw;
     height: auto;
-    top: 1100px;
 }
 .info{
     width: 100%;
@@ -1028,7 +1051,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
 }
-.list__item{
+.social__list .list__item{
     width: 32px;
     height: 32px;
     border: solid 2px #FFFFFF;
@@ -1037,16 +1060,16 @@ footer{
     padding: 4px;
     background-color: #2e2e2e;
 }
-.list__item img{
+.social__list .list__item img{
     width: 100%;
     height: 100%;
 }
-.list__item:hover{
+.social__list .list__item:hover{
     background-color: #FFFFFF;
     opacity: 1;
     border: 0;
 }
-.list__item img:hover{
+.social__list .list__item img:hover{
     color: #000000;
     opacity: 1;
 }
