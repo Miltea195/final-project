@@ -8,10 +8,10 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         waitForAnimate: false,
-        // autoplay: true,
-        // autoplaySpeed: 3000,
-        // pauseOnFocus: true,
-        // pauseOnHover: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: true,
+        pauseOnHover: true,
     });
 })
 $(document).ready(function(){
